@@ -217,7 +217,9 @@ public sealed partial class ShuttleSystem : SharedShuttleSystem
             return;
 
         EnsureComp<ShuttleComponent>(ev.EntityUid);
-        EnsureComp<ImplicitRoofComponent>(ev.EntityUid);
+// ES START
+        // EnsureComp<ImplicitRoofComponent>(ev.EntityUid);
+// ES END
         EnsureComp<FTLDriveComponent>(ev.EntityUid); // Frontier edit
     }
 
