@@ -188,34 +188,6 @@
     # Goobstation - Martial Arts - end
 
 - type: entity
-  id: LockerBrigmedicFilled
-  suffix: Brigmedic, Filled
-  parent: LockerBrigmedic
-  components:
-  - type: EntityTableContainerFill
-    containers:
-      entity_storage: !type:NestedSelector
-        tableId: FillLockerBrigmedic
-
-- type: entityTable
-  id: FillLockerBrigmedic # heavily good edited
-  table: !type:AllSelector
-    children:
-    - id: BoxAutoinjectorCartidges
-    - id: ClothingBackpackDuffelSurgeryFilled
-    - id: ClothingHandsGlovesLatex
-    - id: ClothingOuterHardsuitBrigmedic
-    - id: OxygenTankFilled
-    - id: NitrogenTankFilled
-    - id: ClothingUniformJumpskirtOfLife
-      prob: 0.1
-    - id: MedkitOxygenFilled
-    - id: MedkitAdvancedFilled
-    - id: BoxSyringe
-    - id: BoxBodyBag # Goob Station
-    - id: SecondSkinSecurity # Goobstation
-
-- type: entity
   id: LockerDetectiveFilled
   suffix: Filled
   parent: LockerDetective
