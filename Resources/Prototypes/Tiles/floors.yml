@@ -789,10 +789,11 @@
   heatCapacity: 10000
   tileRipResistance: 250
 
+# ES Start
 - type: tile
   id: FloorReinforced
   name: tiles-reinforced-floor
-  sprite: /Textures/Tiles/reinforced.png
+  sprite: /Textures/_ES/Tiles/reinforced.png
   baseTurf: Plating
   isSubfloor: false
   deconstructTools: [ Prying ]
@@ -800,7 +801,7 @@
     collection: FootstepHull
   itemDrop: PartRodMetal1
   heatCapacity: 10000
-  reinforced: true
+# ES End
 
 - type: tile
   id: FloorMono
