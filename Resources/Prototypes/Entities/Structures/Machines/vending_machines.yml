@@ -1150,7 +1150,7 @@
   - type: SpeakOnUIClosed
     pack: GenericVendGoodbyes
   - type: Sprite
-    sprite: Structures/Machines/VendingMachines/medivend.rsi
+    sprite: _ES/Structures/Machines/Vendors/medical.rsi
     noRot: true
     layers:
     - state: "off"
