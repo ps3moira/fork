@@ -736,6 +736,7 @@
   name: biocube fabricator
   description: Produces animal cubes using biomass.
   components:
+  - type: Appearance
   - type: Sprite
     sprite: Structures/Machines/biofabricator.rsi
     snapCardinals: true
@@ -747,11 +748,9 @@
       shader: unshaded
       map: ["enum.PowerDeviceVisualLayers.Powered"]
       color: "#ffaaaa"
-    - state: inserting
-      map: ["enum.MaterialStorageVisualLayers.Inserting"]
-      color: "#ffaaaa"
     - state: panel
       map: ["enum.WiresVisualLayers.MaintenancePanel"]
+    - map: ["beaker"]
   - type: Machine
     board: BiofabricatorMachineCircuitboard
   - type: MaterialStorage
@@ -1009,15 +1008,14 @@
     sprite: Structures/Machines/biofabricator.rsi
     snapCardinals: true
     layers:
+# ES Start
     - state: icon
       map: ["enum.LatheVisualLayers.IsRunning"]
+    - state: beaker
+      map: ["beaker"]
     - state: unlit
       shader: unshaded
       map: ["enum.PowerDeviceVisualLayers.Powered"]
-    - state: inserting
-      map: ["enum.MaterialStorageVisualLayers.Inserting"]
-    - state: panel
-      map: ["enum.WiresVisualLayers.MaintenancePanel"]
   - type: Machine
     board: BiogeneratorMachineCircuitboard
   - type: MaterialStorage
@@ -1041,6 +1039,15 @@
     staticPacks:
     - BioGenIngredientsStatic
     - BioGenMaterialsStatic
+  - type: ESItemMapper
+    mappings:
+      beaker:
+      - containerId: beaker_slot
+        state: beaker
+        whitelist:
+          components: [ FitsInDispenser ]
+# ES End
+
 
 - type: entity
   parent: [BaseLathe, BaseSiloUtilizer] # Goob edit
@@ -1051,13 +1058,12 @@
     - type: Sprite
       sprite: Structures/Machines/ore_processor.rsi
       layers:
+# ES Start
         - state: icon
           map: ["enum.LatheVisualLayers.IsRunning"]
         - state: unlit
           shader: unshaded
           map: ["enum.PowerDeviceVisualLayers.Powered"]
-        - state: inserting
-          map: ["enum.MaterialStorageVisualLayers.Inserting"]
         - state: panel
           map: ["enum.WiresVisualLayers.MaintenancePanel"]
     - type: Machine
@@ -1076,9 +1082,10 @@
           - Ingot
     - type: Lathe
       idleState: icon
-      runningState: building
+      runningState: inserting
       defaultProductionAmount: 10
       outputToStorage: true # Goob edit
+# ES End
       staticPacks:
       - OreSmelting
       - RGlassSmelting
