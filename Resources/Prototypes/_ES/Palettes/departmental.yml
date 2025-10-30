@@ -1,0 +1,17 @@
+- type: palette
+  id: ESDepartmental
+  name: Departmental (ES)
+  colors:
+    command: "#334E6DB0"
+    medical: "#52B4E97D"
+    green: "#9FED587D"
+    yellow: "#EFB3417D"
+    chemistry: "#fa75007D"
+    red: "#DE3A3A7D"
+    bar: "#7D15007D"
+    purple: "#D37DC97D"
+    brown: "#A461067D"
+    atmospherics: "#3eb3887D"
+    salvage: "#8d1c997D"
+    neutral: "#D4D4D487"
+    neutralLight: "#D4D4D428"
