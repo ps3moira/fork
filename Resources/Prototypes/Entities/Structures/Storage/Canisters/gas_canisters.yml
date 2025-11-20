@@ -74,7 +74,9 @@
     - type: Transform
       noRot: true
     - type: Sprite
-      sprite: Structures/Storage/canister.rsi
+# ES START
+      sprite: _ES/Structures/Storage/canister.rsi
+# ES END
       noRot: true
       layers:
         - state: grey
@@ -760,8 +762,11 @@
       damageModifierSet: Metallic
     - type: InteractionOutline
     - type: Sprite
-      sprite: Structures/Storage/canister.rsi
+# ES START
+      sprite: _ES/Structures/Storage/canister.rsi
       state: grey-1
+      noRot: true
+# ES END
     - type: Physics
       bodyType: Dynamic
     - type: Fixtures
