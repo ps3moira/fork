@@ -43,7 +43,7 @@
   # end Goobstation: port EE height/width sliders
 # ES START
   maxAge: 90
-  maleHair:
+  #maleHair:
   - HumanHairBalding
   - HumanHairBedhead
   - HumanHairBedheadv2
@@ -80,7 +80,7 @@
   - HumanHairThinningfront
   - HumanHairThinningrear
   - HumanHairE
-  femaleHair:
+  #femaleHair:
   - HumanHairAntenna
   #  - HumanHairBeehive
   #  - HumanHairBeehivev2
@@ -139,7 +139,7 @@
   - HumanHairWisp
   # - HumanHairLongBow
   # - HumanHairLongWithBangs
-  unisexHair:
+  #unisexHair:
   - HumanHairAfro
   - HumanHairAfro2
   - HumanHairBigafro
