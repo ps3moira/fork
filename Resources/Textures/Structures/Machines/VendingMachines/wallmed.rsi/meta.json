@@ -8,72 +8,28 @@
   },
   "states": [
     {
-      "name": "normal-unshaded",
-      "directions": 4
+      "name": "broken"
     },
     {
-      "name": "eject-unshaded",
-      "directions": 4,
-      "delays": [
-        [
-          0.1,
-          0.1,
-          0.1,
-          0.1,
-          0.6
-        ],
-        [
-          0.1,
-          0.1,
-          0.1,
-          0.1,
-          0.6
-        ],
-        [
-          0.1,
-          0.1,
-          0.1,
-          0.1,
-          0.6
-        ],
-        [
-          0.1,
-          0.1,
-          0.1,
-          0.1,
-          0.6
-        ]
-      ]
+      "name": "panel"
     },
     {
       "name": "deny-unshaded",
-      "directions": 4,
       "delays": [
         [
-          0.1,
-          0.1,
-          0.1
-        ],
-        [
-          0.1,
-          0.1,
-          0.1
-        ],
-        [
-          0.1,
-          0.1,
-          0.1
-        ],
-        [
-          0.1,
           0.1,
           0.1
         ]
       ]
     },
     {
-      "name": "off",
-      "directions": 4
+      "name": "normal-unshaded",
+      "delays": [
+        [
+          0.1,
+          0.1
+        ]
+      ]
     },
     {
       "name": "off"
