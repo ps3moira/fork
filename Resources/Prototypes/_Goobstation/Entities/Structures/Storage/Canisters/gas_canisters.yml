@@ -106,7 +106,7 @@
   components:
   - type: Sprite
     layers:
-    - state: brown
+    - state: yellow # Greystation
   - type: GasCanister
     gasMixture:
       volume: 1000
@@ -226,7 +226,7 @@
   categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
-    state: brown-1
+    state: yellow-1 # Greystation
 
 - type: entity
   parent: GasCanisterBrokenBase
