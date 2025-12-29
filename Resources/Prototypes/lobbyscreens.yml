@@ -1,3 +1,5 @@
 - type: lobbyBackground
   id: Lobbyscreen1
   background: /Textures/_GS/LobbyScreens/nukieongreystation.png
+  name: Nukie on Arrival
+  artist: ps3moira
