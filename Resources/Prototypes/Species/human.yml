@@ -42,7 +42,7 @@
   maxWidth: 1.10
   # end Goobstation: port EE height/width sliders
 # ES START
-  maxAge: 90
+  maxAge: 80
   maleHair:
   - HumanHairBalding
   - HumanHairBedhead
