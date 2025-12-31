@@ -918,7 +918,6 @@
   - type: CommunicationsConsole
     title: comms-console-announcement-title-station
   - type: DeviceNetwork
-    deviceNetId: Wireless
     transmitFrequencyId: ShuttleTimer
   - type: ActivatableUI
     key: enum.CommunicationsConsoleUiKey.Key
@@ -1649,11 +1648,9 @@
     - map: ["computerLayerKeyboard"]
       state: generic_keyboard
     - map: ["computerLayerScreen"]
-# ES START
-      state: entertainment
+      state: service
     - map: ["computerLayerKeys"]
-      state: generic_keys
-# ES END
+      state: service_keys
     - map: [ "enum.WiresVisualLayers.MaintenancePanel" ]
       state: generic_panel_open
   - type: Computer
@@ -1778,9 +1775,7 @@
     - map: [ "computerLayerKeyboard" ]
       state: generic_keyboard
     - map: [ "computerLayerScreen" ]
-# ES START
-      state: generic
-# ES END
+      state: aiupload
     - map: [ "computerLayerKeys" ]
       state: generic_keys
     - map: [ "enum.WiresVisualLayers.MaintenancePanel" ]
