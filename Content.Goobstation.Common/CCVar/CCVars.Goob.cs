@@ -638,6 +638,11 @@ public sealed partial class GoobCVars
         CVarDef.Create("footprints.minimum_puddle_size", 6f, CVar.SERVERONLY);
 
     /// <summary>
+    ///     Are height/width sliders enabled
+    /// </summary>
+    public static readonly CVarDef<bool> HeightSliders =
+        CVarDef.Create("trauma.height_sliders_enabled", false, CVar.SERVER | CVar.REPLICATED);
+
     /// Should heretic ascension ritual be cancelled if heretic hasn't completed their objectives.
     /// </summary>
     public static readonly CVarDef<bool> AscensionRequiresObjectives =
